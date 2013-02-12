@@ -11,31 +11,36 @@
     transition: all 1s;
  }
 </style>
+    <script>
+        if (window.console) console.log('...');
+
+        window.onload = function() {
+            var client = [document.documentElement.clientWidth, document.documentElement.clientHeight],
+                    image = [client[0] - 2572, client[1] - 1790], prev = [0,0];
+            if (window.console) console.log(client);
+            if (window.console) console.log(image);
+
+            var container = document.getElementById('image-container');
+            container.onmousemove = function(e) {
+                if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
+                    return;
+                }
+                if (window.console) console.log(e);
+
+                var posx = Math.round(image[0] * e.clientX/client[0]) + 'px',
+                        posy = Math.round(image[1] * e.clientY/client[1]) + 'px';
+                container.style.backgroundPosition = '' + posx + ' ' + posy;
+                prev = [e.clientX, e.clientY];
+            }
+        };
+    </script>
 
 </head>
 
-<body id="body">
+<body>
 <div id="image-container"></div>
 
 
-<script>
-	window.onload = function() {
-		var client = [document.documentElement.clientWidth, document.documentElement.clientHeight],
-		image = [client[0] - 2572, client[1] - 1790], prev = [0,0];
-
-		var container = document.getElementById('image-container');
-		container.onmousemove = function(e) {
-			if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
-				return;
-			}
-			
-			var posx = Math.round(image[0] * e.clientX/client[0]) + 'px',
-			posy = Math.round(image[1] * e.clientY/client[1]) + 'px';
-			container.style.backgroundPosition = '' + posx + ' ' + posy;
-			prev = [e.clientX, e.clientY];
-		}
-	};
-</script>
 
 </body>
 </html>
