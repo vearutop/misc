@@ -20,7 +20,7 @@
 
 		
 		var container = $('#body');
-		container.onmousemove = function(e) {
+		container.mousemove = function(e) {
 			if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
 				return;
 			}
