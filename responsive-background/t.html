@@ -25,7 +25,7 @@
 
             var container = document.getElementById('image-container');
             container.onmousemove = function(e) {
-                if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 100) {
+                if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 20) {
                     return;
                 }
                 //if (window.console) console.log(e);
