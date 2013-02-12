@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>hooy</title>
@@ -10,38 +11,34 @@
 	overflow: hidden;
  }
 </style>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-<script>
-	$(function(){
-		var client = [document.documentElement.clientWidth, document.documentElement.clientHeight],
-		image = [client[0] - 2572, client[1] - 1790], prev = [0,0], animation = 0;
-		
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-		
-		var container = $('#body');
-		container.mousemove = function(e) {
-			if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
-				return;
-			}
-			
-			var posx = Math.round(image[0] * e.clientX/client[0]) + 'px',
-			posy = Math.round(image[1] * e.clientY/client[1]) + 'px';
-			
-			container.css({'background-position': posx + ' ' + posy});
-			prev = [e.clientX, e.clientY];
-		}
-	});
-</script>
+    <script>
+        $(function(){
+            var client = [document.documentElement.clientWidth, document.documentElement.clientHeight],
+                    image = [client[0] - 2572, client[1] - 1790], prev = [0,0], animation = 0;
 
+
+
+            var container = $('#body');
+            container.mousemove(function(e) {
+                if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
+                    return;
+                }
+
+                var posx = Math.round(image[0] * e.clientX/client[0]) + 'px',
+                        posy = Math.round(image[1] * e.clientY/client[1]) + 'px';
+
+                container.css({'background-position': posx + ' ' + posy});
+                prev = [e.clientX, e.clientY];
+            });
+        });
+    </script>
 
 </head>
 
-
-
 <body id="body">
-
-
-
 </body>
+
 </html>
