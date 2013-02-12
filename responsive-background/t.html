@@ -2,18 +2,20 @@
 <head>
 <title>hooy</title>
 <style>
- body {
+ #image-container {
  	background-image: url('big.jpg');
 	background-repeat: no-repeat;
-	transition: all 1s;
 	height: 100%;
+    width: 100%;
 	overflow: hidden;
+    transition: all 1s;
  }
 </style>
 
 </head>
 
 <body id="body">
+<div id="image-container"></div>
 
 
 <script>
@@ -21,7 +23,7 @@
 		var client = [document.documentElement.clientWidth, document.documentElement.clientHeight],
 		image = [client[0] - 2572, client[1] - 1790], prev = [0,0];
 
-		var container = document.getElementById('body');
+		var container = document.getElementById('image-container');
 		container.onmousemove = function(e) {
 			if (Math.abs((e.clientX + e.clientY) - (prev[0] + prev[1])) < 50) {
 				return;
