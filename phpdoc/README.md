@@ -43,6 +43,7 @@ Developer can help IDE to help him.
 * https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md
 * http://stackoverflow.com/questions/tagged/phpdoc
 * https://blog.jetbrains.com/phpstorm/2014/04/phpstorm-8-markdown-support-in-phpdoc-blocks/
+* https://youtrack.jetbrains.com/issue/WI-17116
 * http://usejsdoc.org/ :)
 
 
