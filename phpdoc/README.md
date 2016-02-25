@@ -22,16 +22,26 @@ Developer can help IDE to help him.
 ### Hinting multiple types with `|`
 ### Hinting traversables with `Item[]`
 ### Using `@method` to describe magic methods
-### Using `@see` to make references
-### Using `@property` to hint magic properties
+### Using `@see`, `@uses` to make references
+### Using `@property`, `@property-read`, `@property-write` to hint magic properties
 ### `instanceof` as type hinter
 ### Hinting variadic arguments with `@param`
 ### Overriding local variable or property with `@var`
+### Calling static methods on string variable with `@var SomeClass`
+### Hinting `new $className` with `@var CommonAncestor` 
 ### Defining `array` structure with stub classes
+### Not possible to hint array key or specific array item, do not use arrays
 ### Type-hinting argument with `null` default value
 
 ## General purpose tags
 ### `@internal`
 ### `@deprecated`
 ### `@todo`
+
+## See also
+http://www.phpdoc.org/docs/latest/references/phpdoc/tags/index.html
+http://stackoverflow.com/questions/tagged/phpdoc
+https://blog.jetbrains.com/phpstorm/2014/04/phpstorm-8-markdown-support-in-phpdoc-blocks/
+http://usejsdoc.org/ :)
+
 
