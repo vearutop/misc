@@ -11,3 +11,27 @@ Modern IDEs such as PHPStorm do a great job of performing statical code analysis
 and error detecting. 
 
 Developer can help IDE to help him.
+
+## Benefits of reflexive code, find usages, refactoring
+### Avoid literals and reusable variables
+### Word on immutable objects
+### Symbolizing literals with constants
+
+## Helpful `phpdoc` practices
+### Using `@return $this`, `@return static` to hint abstract class descendants
+### Hinting multiple types with `|`
+### Hinting traversables with `Item[]`
+### Using `@method` to describe magic methods
+### Using `@see` to make references
+### Using `@property` to hint magic properties
+### `instanceof` as type hinter
+### Hinting variadic arguments with `@param`
+### Overriding local variable or property with `@var`
+### Defining `array` structure with stub classes
+### Type-hinting argument with `null` default value
+
+## General purpose tags
+### `@internal`
+### `@deprecated`
+### `@todo`
+
