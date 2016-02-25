@@ -40,6 +40,7 @@ Developer can help IDE to help him.
 
 ## See also
 * http://www.phpdoc.org/docs/latest/references/phpdoc/tags/index.html
+* https://github.com/phpDocumentor/fig-standards/blob/master/proposed/phpdoc.md
 * http://stackoverflow.com/questions/tagged/phpdoc
 * https://blog.jetbrains.com/phpstorm/2014/04/phpstorm-8-markdown-support-in-phpdoc-blocks/
 * http://usejsdoc.org/ :)
