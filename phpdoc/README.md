@@ -39,9 +39,9 @@ Developer can help IDE to help him.
 ### `@todo`
 
 ## See also
-http://www.phpdoc.org/docs/latest/references/phpdoc/tags/index.html
-http://stackoverflow.com/questions/tagged/phpdoc
-https://blog.jetbrains.com/phpstorm/2014/04/phpstorm-8-markdown-support-in-phpdoc-blocks/
-http://usejsdoc.org/ :)
+* http://www.phpdoc.org/docs/latest/references/phpdoc/tags/index.html
+* http://stackoverflow.com/questions/tagged/phpdoc
+* https://blog.jetbrains.com/phpstorm/2014/04/phpstorm-8-markdown-support-in-phpdoc-blocks/
+* http://usejsdoc.org/ :)
 
 
